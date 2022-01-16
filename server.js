@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 myDB(async (client) => {
-  const database = await client.db("apitest").collection("projects");
+  const database = await client.db("database");
 
   //Sample front-end
   app.route("/:project/").get(function (req, res) {
