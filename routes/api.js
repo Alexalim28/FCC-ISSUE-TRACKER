@@ -95,8 +95,6 @@ module.exports = function (app, database) {
         }
       });
 
-      console.log(update);
-
       database.collection(project).updateOne(
         { _id: new ObjectId(_id) },
         {
